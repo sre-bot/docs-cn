@@ -59,7 +59,7 @@ jobs:
           command: |
             sudo bash -c 'echo "222.222.95.49 uc.qbox.me" >> /etc/hosts';
             if [ "${CIRCLE_BRANCH}" == "test-release-dev" ]; then
-              python3 scripts/upload.py dev/output.pdf tidb-manual-cn-preview-dev.pdf;
+              python3 scripts/upload.py output.pdf tidb-manual-cn-test-dev.pdf;
             fi
 
       - run:
